@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="52.0.2743.82 m"/>
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="52.0.2743.82 m"/>
+    <classes>
+      <class name="com.grid.HubNode.Script_runningFromBatchFile">
+        <methods>
+          <include name="launchBrowset" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.grid.HubNode.Script_runningFromBatchFile -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="46.0.1"/>
+    <classes>
+      <class name="com.grid.HubNode.Script_runningFromBatchFile">
+        <methods>
+          <include name="launchBrowset" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.grid.HubNode.Script_runningFromBatchFile -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

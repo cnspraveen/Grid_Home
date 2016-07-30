@@ -1,0 +1,21 @@
+<suite name="Suite" parallel="tests">
+
+  <test name="Test1">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="http://192.168.0.101:4444/wd/hub"/>
+  <parameter name="version" value="46.0.1"/>
+    <classes>
+      <class name="com.grid.HubNode.ParalllelExecution_withBroswerName_URL_Version"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://192.168.0.101:4444/grid/register"/>
+  <parameter name="version" value="52.0.2743.82 m"/>
+    <classes>
+      <class name="com.grid.HubNode.ParalllelExecution_withBroswerName_URL_Version"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
